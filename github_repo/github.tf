@@ -1,5 +1,5 @@
 provider "github" {
-  token = "github_token"
+  token = "${file("../github_token.txt")}"
 }
 
 resource "github_repository" "example" {
